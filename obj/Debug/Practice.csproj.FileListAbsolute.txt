@@ -1,0 +1,14 @@
+C:\Users\Moki\Desktop\Practice\Practice\bin\Debug\Practice.exe.config
+C:\Users\Moki\Desktop\Practice\Practice\bin\Debug\Practice.exe
+C:\Users\Moki\Desktop\Practice\Practice\bin\Debug\Practice.pdb
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.csprojAssemblyReference.cache
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.Properties.Resources.resources
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.csproj.GenerateResource.cache
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.csproj.CoreCompileInputs.cache
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.exe
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.pdb
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.AdminForm.resources
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.LoginForm.resources
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.PersonnelForm.resources
+C:\Users\Moki\Desktop\Practice\Practice\bin\Debug\DB.mdb
+C:\Users\Moki\Desktop\Practice\Practice\obj\Debug\Practice.TablesForm.resources
