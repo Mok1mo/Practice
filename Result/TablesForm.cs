@@ -86,12 +86,14 @@ namespace Practice
 
         private void PersonnelResultForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dBDataSet.Conscripts' table. You can move, or remove it, as needed.
-            this.conscriptsTableAdapter.Fill(this.dbDataSet.Conscripts);
-            // TODO: This line of code loads data into the 'dBDataSet.Students' table. You can move, or remove it, as needed.
-            this.studentsTableAdapter.Fill(this.dbDataSet.Students);
             // TODO: This line of code loads data into the 'dBDataSet.Personnel' table. You can move, or remove it, as needed.
             this.personnelTableAdapter.Fill(this.dbDataSet.Personnel);
+            // TODO: This line of code loads data into the 'dBDataSet.Students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.dbDataSet.Students);
+            // TODO: This line of code loads data into the 'dBDataSet.Conscripts' table. You can move, or remove it, as needed.
+            this.conscriptsTableAdapter.Fill(this.dbDataSet.Conscripts);
+            
+            
 
         }
 
