@@ -58,7 +58,7 @@
             this.tablesLabel.Size = new System.Drawing.Size(91, 25);
             this.tablesLabel.TabIndex = 4;
             this.tablesLabel.Text = "Таблиці";
-            this.tablesLabel.Click += new System.EventHandler(this.tablesLabel_Click);
+            this.tablesLabel.Click += new System.EventHandler(this.tableLabel_Click);
             // 
             // tableLabel
             // 
@@ -71,7 +71,7 @@
             this.tableLabel.Size = new System.Drawing.Size(81, 25);
             this.tableLabel.TabIndex = 9;
             this.tableLabel.Text = "Табель";
-            this.tableLabel.Click += new System.EventHandler(this.tableLabel_Click_1);
+            this.tableLabel.Click += new System.EventHandler(this.tableLabel_Click);
             // 
             // PersonnelForm
             // 
