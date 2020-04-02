@@ -86,6 +86,12 @@ namespace Practice
 
         private void PersonnelResultForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dBDataSet.Students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.dBDataSet.Students);
+            // TODO: This line of code loads data into the 'dBDataSet.Personnel' table. You can move, or remove it, as needed.
+            this.personnelTableAdapter.Fill(this.dBDataSet.Personnel);
+            // TODO: This line of code loads data into the 'dBDataSet.Conscripts' table. You can move, or remove it, as needed.
+            this.conscriptsTableAdapter.Fill(this.dBDataSet.Conscripts);
             // TODO: This line of code loads data into the 'dBDataSet.Conscripts' table. You can move, or remove it, as needed.
             this.conscriptsTableAdapter.Fill(this.dBDataSet.Conscripts);
             // TODO: This line of code loads data into the 'dBDataSet.Students' table. You can move, or remove it, as needed.
@@ -159,6 +165,11 @@ namespace Practice
             {
                 this.Width = conscriptsDataGridView.Width;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

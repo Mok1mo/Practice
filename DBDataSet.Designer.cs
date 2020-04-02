@@ -715,7 +715,7 @@ namespace Practice {
             
             private global::System.Data.DataColumn columnДата_народження;
             
-            private global::System.Data.DataColumn columnПриписка_до_воєнкомату;
+            private global::System.Data.DataColumn columnПриписка;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -784,9 +784,9 @@ namespace Practice {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn Приписка_до_воєнкоматуColumn {
+            public global::System.Data.DataColumn ПрипискаColumn {
                 get {
-                    return this.columnПриписка_до_воєнкомату;
+                    return this.columnПриписка;
                 }
             }
             
@@ -827,14 +827,14 @@ namespace Practice {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public ConscriptsRow AddConscriptsRow(string Прізвище, string _Ім_я, string Дата_народження, string Приписка_до_воєнкомату) {
+            public ConscriptsRow AddConscriptsRow(string Прізвище, string _Ім_я, string Дата_народження, string Приписка) {
                 ConscriptsRow rowConscriptsRow = ((ConscriptsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Прізвище,
                         _Ім_я,
                         Дата_народження,
-                        Приписка_до_воєнкомату};
+                        Приписка};
                 rowConscriptsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowConscriptsRow);
                 return rowConscriptsRow;
@@ -868,7 +868,7 @@ namespace Practice {
                 this.columnПрізвище = base.Columns["Прізвище"];
                 this._columnІм_я = base.Columns["Ім\'я"];
                 this.columnДата_народження = base.Columns["Дата народження"];
-                this.columnПриписка_до_воєнкомату = base.Columns["Приписка до воєнкомату"];
+                this.columnПриписка = base.Columns["Приписка"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -884,8 +884,8 @@ namespace Practice {
                 base.Columns.Add(this._columnІм_я);
                 this.columnДата_народження = new global::System.Data.DataColumn("Дата народження", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnДата_народження);
-                this.columnПриписка_до_воєнкомату = new global::System.Data.DataColumn("Приписка до воєнкомату", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnПриписка_до_воєнкомату);
+                this.columnПриписка = new global::System.Data.DataColumn("Приписка", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПриписка);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
                 this.columnid.AutoIncrement = true;
@@ -896,7 +896,7 @@ namespace Practice {
                 this.columnПрізвище.MaxLength = 255;
                 this._columnІм_я.MaxLength = 255;
                 this.columnДата_народження.MaxLength = 255;
-                this.columnПриписка_до_воєнкомату.MaxLength = 255;
+                this.columnПриписка.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1985,17 +1985,17 @@ namespace Practice {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string Приписка_до_воєнкомату {
+            public string Приписка {
                 get {
                     try {
-                        return ((string)(this[this.tableConscripts.Приписка_до_воєнкоматуColumn]));
+                        return ((string)(this[this.tableConscripts.ПрипискаColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Приписка до воєнкомату\' in table \'Conscripts\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Приписка\' in table \'Conscripts\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableConscripts.Приписка_до_воєнкоматуColumn] = value;
+                    this[this.tableConscripts.ПрипискаColumn] = value;
                 }
             }
             
@@ -2037,14 +2037,14 @@ namespace Practice {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsПриписка_до_воєнкоматуNull() {
-                return this.IsNull(this.tableConscripts.Приписка_до_воєнкоматуColumn);
+            public bool IsПрипискаNull() {
+                return this.IsNull(this.tableConscripts.ПрипискаColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetПриписка_до_воєнкоматуNull() {
-                this[this.tableConscripts.Приписка_до_воєнкоматуColumn] = global::System.Convert.DBNull;
+            public void SetПрипискаNull() {
+                this[this.tableConscripts.ПрипискаColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3203,11 +3203,11 @@ namespace Practice.DBDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Прізвище", "Прізвище");
             tableMapping.ColumnMappings.Add("Ім\'я", "Ім\'я");
             tableMapping.ColumnMappings.Add("Дата народження", "Дата народження");
-            tableMapping.ColumnMappings.Add("Приписка до воєнкомату", "Приписка до воєнкомату");
+            tableMapping.ColumnMappings.Add("Приписка", "Приписка");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Conscripts` WHERE ((`id` = ?) AND ((? = 1 AND `Прізвище` IS NULL) OR (`Прізвище` = ?)) AND ((? = 1 AND `Ім'я` IS NULL) OR (`Ім'я` = ?)) AND ((? = 1 AND `Дата народження` IS NULL) OR (`Дата народження` = ?)) AND ((? = 1 AND `Приписка до воєнкомату` IS NULL) OR (`Приписка до воєнкомату` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Conscripts` WHERE ((`id` = ?) AND ((? = 1 AND `Прізвище` IS NULL) OR (`Прізвище` = ?)) AND ((? = 1 AND `Ім'я` IS NULL) OR (`Ім'я` = ?)) AND ((? = 1 AND `Дата народження` IS NULL) OR (`Дата народження` = ?)) AND ((? = 1 AND `Приписка` IS NULL) OR (`Приписка` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_id", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Прізвище", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Прізвище", global::System.Data.DataRowVersion.Original, true, null));
@@ -3216,25 +3216,25 @@ namespace Practice.DBDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Ім\'я", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ім\'я", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Дата_народження", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата народження", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Дата_народження", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата народження", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Приписка_до_воєнкомату", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка до воєнкомату", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Приписка_до_воєнкомату", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка до воєнкомату", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Приписка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Приписка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Conscripts` (`Прізвище`, `Ім\'я`, `Дата народження`, `Приписка до воє" +
-                "нкомату`) VALUES (?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Conscripts` (`Прізвище`, `Ім\'я`, `Дата народження`, `Приписка`) VALU" +
+                "ES (?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Прізвище", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Прізвище", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Ім\'я", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ім\'я", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_народження", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата народження", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Приписка_до_воєнкомату", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка до воєнкомату", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Приписка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Conscripts` SET `Прізвище` = ?, `Ім'я` = ?, `Дата народження` = ?, `Приписка до воєнкомату` = ? WHERE ((`id` = ?) AND ((? = 1 AND `Прізвище` IS NULL) OR (`Прізвище` = ?)) AND ((? = 1 AND `Ім'я` IS NULL) OR (`Ім'я` = ?)) AND ((? = 1 AND `Дата народження` IS NULL) OR (`Дата народження` = ?)) AND ((? = 1 AND `Приписка до воєнкомату` IS NULL) OR (`Приписка до воєнкомату` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Conscripts` SET `Прізвище` = ?, `Ім'я` = ?, `Дата народження` = ?, `Приписка` = ? WHERE ((`id` = ?) AND ((? = 1 AND `Прізвище` IS NULL) OR (`Прізвище` = ?)) AND ((? = 1 AND `Ім'я` IS NULL) OR (`Ім'я` = ?)) AND ((? = 1 AND `Дата народження` IS NULL) OR (`Дата народження` = ?)) AND ((? = 1 AND `Приписка` IS NULL) OR (`Приписка` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Прізвище", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Прізвище", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Ім\'я", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ім\'я", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_народження", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата народження", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Приписка_до_воєнкомату", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка до воєнкомату", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Приписка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_id", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Прізвище", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Прізвище", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Прізвище", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Прізвище", global::System.Data.DataRowVersion.Original, false, null));
@@ -3242,8 +3242,8 @@ namespace Practice.DBDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Ім\'я", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ім\'я", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Дата_народження", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата народження", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Дата_народження", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата народження", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Приписка_до_воєнкомату", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка до воєнкомату", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Приписка_до_воєнкомату", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка до воєнкомату", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Приписка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Приписка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Приписка", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3259,8 +3259,7 @@ namespace Practice.DBDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, Прізвище, [Ім\'я], [Дата народження], [Приписка до воєнкомату] FROM Con" +
-                "scripts";
+            this._commandCollection[0].CommandText = "SELECT id, Прізвище, [Ім\'я], [Дата народження], Приписка FROM Conscripts";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3321,7 +3320,7 @@ namespace Practice.DBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id, string Original_Прізвище, string _Original_Ім_я, string Original_Дата_народження, string Original_Приписка_до_воєнкомату) {
+        public virtual int Delete(int Original_id, string Original_Прізвище, string _Original_Ім_я, string Original_Дата_народження, string Original_Приписка) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
             if ((Original_Прізвище == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -3347,13 +3346,13 @@ namespace Practice.DBDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Дата_народження));
             }
-            if ((Original_Приписка_до_воєнкомату == null)) {
+            if ((Original_Приписка == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Приписка_до_воєнкомату));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Приписка));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3375,7 +3374,7 @@ namespace Practice.DBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Прізвище, string _Ім_я, string Дата_народження, string Приписка_до_воєнкомату) {
+        public virtual int Insert(string Прізвище, string _Ім_я, string Дата_народження, string Приписка) {
             if ((Прізвище == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -3394,11 +3393,11 @@ namespace Practice.DBDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Дата_народження));
             }
-            if ((Приписка_до_воєнкомату == null)) {
+            if ((Приписка == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Приписка_до_воєнкомату));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Приписка));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3420,7 +3419,7 @@ namespace Practice.DBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Прізвище, string _Ім_я, string Дата_народження, string Приписка_до_воєнкомату, int Original_id, string Original_Прізвище, string _Original_Ім_я, string Original_Дата_народження, string Original_Приписка_до_воєнкомату) {
+        public virtual int Update(string Прізвище, string _Ім_я, string Дата_народження, string Приписка, int Original_id, string Original_Прізвище, string _Original_Ім_я, string Original_Дата_народження, string Original_Приписка) {
             if ((Прізвище == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -3439,11 +3438,11 @@ namespace Practice.DBDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Дата_народження));
             }
-            if ((Приписка_до_воєнкомату == null)) {
+            if ((Приписка == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Приписка_до_воєнкомату));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Приписка));
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_id));
             if ((Original_Прізвище == null)) {
@@ -3470,13 +3469,13 @@ namespace Practice.DBDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_Дата_народження));
             }
-            if ((Original_Приписка_до_воєнкомату == null)) {
+            if ((Original_Приписка == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Приписка_до_воєнкомату));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Приписка));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
