@@ -86,15 +86,12 @@ namespace Practice
 
         private void PersonnelResultForm_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dBDataSet.Personnel' table. You can move, or remove it, as needed.
-            this.personnelTableAdapter.Fill(this.dbDataSet.Personnel);
-            // TODO: This line of code loads data into the 'dBDataSet.Students' table. You can move, or remove it, as needed.
-            this.studentsTableAdapter.Fill(this.dbDataSet.Students);
             // TODO: This line of code loads data into the 'dBDataSet.Conscripts' table. You can move, or remove it, as needed.
-            this.conscriptsTableAdapter.Fill(this.dbDataSet.Conscripts);
-            
-            
-
+            this.conscriptsTableAdapter.Fill(this.dBDataSet.Conscripts);
+            // TODO: This line of code loads data into the 'dBDataSet.Students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.dBDataSet.Students);
+            // TODO: This line of code loads data into the 'dBDataSet.Personnel' table. You can move, or remove it, as needed.
+            this.personnelTableAdapter.Fill(this.dBDataSet.Personnel);
         }
 
         private void saveButton_Click(object sender, EventArgs e)
@@ -110,15 +107,15 @@ namespace Practice
             {
                 if (tabControl.SelectedIndex == 0)
                 {
-                    personnelTableAdapter.Update(dbDataSet);
+                    personnelTableAdapter.Update(dBDataSet);
                 }
                 if (tabControl.SelectedIndex == 1)
                 {
-                    studentsTableAdapter.Update(dbDataSet);
+                    studentsTableAdapter.Update(dBDataSet);
                 }
                 if (tabControl.SelectedIndex == 2)
                 {
-                    conscriptsTableAdapter.Update(dbDataSet);
+                    conscriptsTableAdapter.Update(dBDataSet);
                 }
             }
         }

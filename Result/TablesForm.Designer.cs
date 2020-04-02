@@ -29,21 +29,39 @@
         protected void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.personnelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbDataSet = new Practice.DBDataSet();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.searchPanel = new System.Windows.Forms.Panel();
             this.saveButton = new System.Windows.Forms.Button();
-            this.personnelTableAdapter = new Practice.DBDataSetTableAdapters.PersonnelTableAdapter();
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsTableAdapter = new Practice.DBDataSetTableAdapters.StudentsTableAdapter();
-            this.conscriptsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.conscriptsTableAdapter = new Practice.DBDataSetTableAdapters.ConscriptsTableAdapter();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.workersDataGridView = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.studentsDataGridView = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.conscriptsDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataPanel = new System.Windows.Forms.Panel();
+            this.припискаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаНародженняDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.імяDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.прізвищеDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dBDataSet = new Practice.DBDataSet();
+            this.personnelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personnelTableAdapter = new Practice.DBDataSetTableAdapters.PersonnelTableAdapter();
+            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentsTableAdapter = new Practice.DBDataSetTableAdapters.StudentsTableAdapter();
+            this.conscriptsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.conscriptsTableAdapter = new Practice.DBDataSetTableAdapters.ConscriptsTableAdapter();
+            this.прізвищеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.імяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.категоріяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.колишняРоботаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.кваліфікаціяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.посадаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.датаНародженняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.прізвищеDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.імяDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.спеціалізаціяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,31 +70,11 @@
             this.датаНародженняDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.містоселоDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.місцеПропискиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.conscriptsDataGridView = new System.Windows.Forms.DataGridView();
             this.прізвищеDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.імяDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.датаНародженняDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.припискаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataPanel = new System.Windows.Forms.Panel();
-            this.припискаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаНародженняDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.імяDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.прізвищеDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.прізвищеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.імяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.категоріяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.колишняРоботаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.кваліфікаціяDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.посадаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.датаНародженняDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.personnelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).BeginInit();
+            this.припискаДоВоєнкоматуDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.searchPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conscriptsBindingSource)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.workersDataGridView)).BeginInit();
@@ -85,18 +83,14 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conscriptsDataGridView)).BeginInit();
             this.dataPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personnelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conscriptsBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // personnelBindingSource
-            // 
-            this.personnelBindingSource.DataMember = "Personnel";
-            this.personnelBindingSource.DataSource = this.dbDataSet;
-            // 
-            // dbDataSet
-            // 
-            this.dbDataSet.DataSetName = "DBDataSet";
-            this.dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // searchTextBox
             // 
@@ -136,28 +130,6 @@
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // personnelTableAdapter
-            // 
-            this.personnelTableAdapter.ClearBeforeFill = true;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "Students";
-            this.studentsBindingSource.DataSource = this.dbDataSet;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // conscriptsBindingSource
-            // 
-            this.conscriptsBindingSource.DataMember = "Conscripts";
-            this.conscriptsBindingSource.DataSource = this.dbDataSet;
-            // 
-            // conscriptsTableAdapter
-            // 
-            this.conscriptsTableAdapter.ClearBeforeFill = true;
-            // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabPage1);
@@ -173,6 +145,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.workersDataGridView);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -184,18 +157,8 @@
             // 
             // workersDataGridView
             // 
-            this.workersDataGridView.AutoGenerateColumns = false;
             this.workersDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.workersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.workersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.прізвищеDataGridViewTextBoxColumn,
-            this.імяDataGridViewTextBoxColumn,
-            this.категоріяDataGridViewTextBoxColumn,
-            this.колишняРоботаDataGridViewTextBoxColumn,
-            this.кваліфікаціяDataGridViewTextBoxColumn,
-            this.посадаDataGridViewTextBoxColumn,
-            this.датаНародженняDataGridViewTextBoxColumn});
-            this.workersDataGridView.DataSource = this.personnelBindingSource;
             this.workersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.workersDataGridView.Location = new System.Drawing.Point(3, 3);
             this.workersDataGridView.Name = "workersDataGridView";
@@ -205,6 +168,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Controls.Add(this.studentsDataGridView);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -216,19 +180,8 @@
             // 
             // studentsDataGridView
             // 
-            this.studentsDataGridView.AutoGenerateColumns = false;
             this.studentsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.studentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.прізвищеDataGridViewTextBoxColumn1,
-            this.імяDataGridViewTextBoxColumn1,
-            this.спеціалізаціяDataGridViewTextBoxColumn,
-            this.факультетDataGridViewTextBoxColumn,
-            this.групаDataGridViewTextBoxColumn,
-            this.датаНародженняDataGridViewTextBoxColumn1,
-            this.містоселоDataGridViewTextBoxColumn,
-            this.місцеПропискиDataGridViewTextBoxColumn});
-            this.studentsDataGridView.DataSource = this.studentsBindingSource;
             this.studentsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.studentsDataGridView.Location = new System.Drawing.Point(3, 3);
             this.studentsDataGridView.Name = "studentsDataGridView";
@@ -236,56 +189,9 @@
             this.studentsDataGridView.TabIndex = 1;
             this.studentsDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.studentsDataGridView_UserDeletingRow);
             // 
-            // прізвищеDataGridViewTextBoxColumn1
-            // 
-            this.прізвищеDataGridViewTextBoxColumn1.DataPropertyName = "Прізвище";
-            this.прізвищеDataGridViewTextBoxColumn1.HeaderText = "Прізвище";
-            this.прізвищеDataGridViewTextBoxColumn1.Name = "прізвищеDataGridViewTextBoxColumn1";
-            // 
-            // імяDataGridViewTextBoxColumn1
-            // 
-            this.імяDataGridViewTextBoxColumn1.DataPropertyName = "Ім\'я";
-            this.імяDataGridViewTextBoxColumn1.HeaderText = "Ім\'я";
-            this.імяDataGridViewTextBoxColumn1.Name = "імяDataGridViewTextBoxColumn1";
-            // 
-            // спеціалізаціяDataGridViewTextBoxColumn
-            // 
-            this.спеціалізаціяDataGridViewTextBoxColumn.DataPropertyName = "Спеціалізація";
-            this.спеціалізаціяDataGridViewTextBoxColumn.HeaderText = "Спеціалізація";
-            this.спеціалізаціяDataGridViewTextBoxColumn.Name = "спеціалізаціяDataGridViewTextBoxColumn";
-            // 
-            // факультетDataGridViewTextBoxColumn
-            // 
-            this.факультетDataGridViewTextBoxColumn.DataPropertyName = "Факультет";
-            this.факультетDataGridViewTextBoxColumn.HeaderText = "Факультет";
-            this.факультетDataGridViewTextBoxColumn.Name = "факультетDataGridViewTextBoxColumn";
-            // 
-            // групаDataGridViewTextBoxColumn
-            // 
-            this.групаDataGridViewTextBoxColumn.DataPropertyName = "Група";
-            this.групаDataGridViewTextBoxColumn.HeaderText = "Група";
-            this.групаDataGridViewTextBoxColumn.Name = "групаDataGridViewTextBoxColumn";
-            // 
-            // датаНародженняDataGridViewTextBoxColumn1
-            // 
-            this.датаНародженняDataGridViewTextBoxColumn1.DataPropertyName = "ДатаНародження";
-            this.датаНародженняDataGridViewTextBoxColumn1.HeaderText = "ДатаНародження";
-            this.датаНародженняDataGridViewTextBoxColumn1.Name = "датаНародженняDataGridViewTextBoxColumn1";
-            // 
-            // містоселоDataGridViewTextBoxColumn
-            // 
-            this.містоселоDataGridViewTextBoxColumn.DataPropertyName = "Місто/село";
-            this.містоселоDataGridViewTextBoxColumn.HeaderText = "Місто/село";
-            this.містоселоDataGridViewTextBoxColumn.Name = "містоселоDataGridViewTextBoxColumn";
-            // 
-            // місцеПропискиDataGridViewTextBoxColumn
-            // 
-            this.місцеПропискиDataGridViewTextBoxColumn.DataPropertyName = "МісцеПрописки";
-            this.місцеПропискиDataGridViewTextBoxColumn.HeaderText = "МісцеПрописки";
-            this.місцеПропискиDataGridViewTextBoxColumn.Name = "місцеПропискиDataGridViewTextBoxColumn";
-            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.conscriptsDataGridView);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -297,45 +203,14 @@
             // 
             // conscriptsDataGridView
             // 
-            this.conscriptsDataGridView.AutoGenerateColumns = false;
             this.conscriptsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.conscriptsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.conscriptsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.прізвищеDataGridViewTextBoxColumn3,
-            this.імяDataGridViewTextBoxColumn3,
-            this.датаНародженняDataGridViewTextBoxColumn3,
-            this.припискаDataGridViewTextBoxColumn1});
-            this.conscriptsDataGridView.DataSource = this.conscriptsBindingSource;
             this.conscriptsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.conscriptsDataGridView.Location = new System.Drawing.Point(3, 3);
             this.conscriptsDataGridView.Name = "conscriptsDataGridView";
             this.conscriptsDataGridView.Size = new System.Drawing.Size(870, 270);
             this.conscriptsDataGridView.TabIndex = 1;
             this.conscriptsDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.conscriptsDataGridView_UserDeletingRow);
-            // 
-            // прізвищеDataGridViewTextBoxColumn3
-            // 
-            this.прізвищеDataGridViewTextBoxColumn3.DataPropertyName = "Прізвище";
-            this.прізвищеDataGridViewTextBoxColumn3.HeaderText = "Прізвище";
-            this.прізвищеDataGridViewTextBoxColumn3.Name = "прізвищеDataGridViewTextBoxColumn3";
-            // 
-            // імяDataGridViewTextBoxColumn3
-            // 
-            this.імяDataGridViewTextBoxColumn3.DataPropertyName = "Ім\'я";
-            this.імяDataGridViewTextBoxColumn3.HeaderText = "Ім\'я";
-            this.імяDataGridViewTextBoxColumn3.Name = "імяDataGridViewTextBoxColumn3";
-            // 
-            // датаНародженняDataGridViewTextBoxColumn3
-            // 
-            this.датаНародженняDataGridViewTextBoxColumn3.DataPropertyName = "ДатаНародження";
-            this.датаНародженняDataGridViewTextBoxColumn3.HeaderText = "ДатаНародження";
-            this.датаНародженняDataGridViewTextBoxColumn3.Name = "датаНародженняDataGridViewTextBoxColumn3";
-            // 
-            // припискаDataGridViewTextBoxColumn1
-            // 
-            this.припискаDataGridViewTextBoxColumn1.DataPropertyName = "Приписка";
-            this.припискаDataGridViewTextBoxColumn1.HeaderText = "Приписка";
-            this.припискаDataGridViewTextBoxColumn1.Name = "припискаDataGridViewTextBoxColumn1";
             // 
             // dataPanel
             // 
@@ -381,10 +256,95 @@
             this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
             this.idDataGridViewTextBoxColumn2.Width = 40;
             // 
-            // dbDataSetBindingSource
+            // dataGridView1
             // 
-            this.dbDataSetBindingSource.DataSource = this.dbDataSet;
-            this.dbDataSetBindingSource.Position = 0;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.прізвищеDataGridViewTextBoxColumn,
+            this.імяDataGridViewTextBoxColumn,
+            this.категоріяDataGridViewTextBoxColumn,
+            this.колишняРоботаDataGridViewTextBoxColumn,
+            this.кваліфікаціяDataGridViewTextBoxColumn,
+            this.посадаDataGridViewTextBoxColumn,
+            this.датаНародженняDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.personnelBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(870, 270);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.прізвищеDataGridViewTextBoxColumn1,
+            this.імяDataGridViewTextBoxColumn1,
+            this.спеціалізаціяDataGridViewTextBoxColumn,
+            this.факультетDataGridViewTextBoxColumn,
+            this.групаDataGridViewTextBoxColumn,
+            this.датаНародженняDataGridViewTextBoxColumn1,
+            this.містоселоDataGridViewTextBoxColumn,
+            this.місцеПропискиDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.studentsBindingSource;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(870, 270);
+            this.dataGridView2.TabIndex = 2;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.прізвищеDataGridViewTextBoxColumn3,
+            this.імяDataGridViewTextBoxColumn3,
+            this.датаНародженняDataGridViewTextBoxColumn3,
+            this.припискаДоВоєнкоматуDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.conscriptsBindingSource;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(870, 270);
+            this.dataGridView3.TabIndex = 2;
+            // 
+            // dBDataSet
+            // 
+            this.dBDataSet.DataSetName = "DBDataSet";
+            this.dBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // personnelBindingSource
+            // 
+            this.personnelBindingSource.DataMember = "Personnel";
+            this.personnelBindingSource.DataSource = this.dBDataSet;
+            // 
+            // personnelTableAdapter
+            // 
+            this.personnelTableAdapter.ClearBeforeFill = true;
+            // 
+            // studentsBindingSource
+            // 
+            this.studentsBindingSource.DataMember = "Students";
+            this.studentsBindingSource.DataSource = this.dBDataSet;
+            // 
+            // studentsTableAdapter
+            // 
+            this.studentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // conscriptsBindingSource
+            // 
+            this.conscriptsBindingSource.DataMember = "Conscripts";
+            this.conscriptsBindingSource.DataSource = this.dBDataSet;
+            // 
+            // conscriptsTableAdapter
+            // 
+            this.conscriptsTableAdapter.ClearBeforeFill = true;
             // 
             // прізвищеDataGridViewTextBoxColumn
             // 
@@ -406,8 +366,8 @@
             // 
             // колишняРоботаDataGridViewTextBoxColumn
             // 
-            this.колишняРоботаDataGridViewTextBoxColumn.DataPropertyName = "КолишняРобота";
-            this.колишняРоботаDataGridViewTextBoxColumn.HeaderText = "КолишняРобота";
+            this.колишняРоботаDataGridViewTextBoxColumn.DataPropertyName = "Колишня робота";
+            this.колишняРоботаDataGridViewTextBoxColumn.HeaderText = "Колишня робота";
             this.колишняРоботаDataGridViewTextBoxColumn.Name = "колишняРоботаDataGridViewTextBoxColumn";
             // 
             // кваліфікаціяDataGridViewTextBoxColumn
@@ -424,9 +384,81 @@
             // 
             // датаНародженняDataGridViewTextBoxColumn
             // 
-            this.датаНародженняDataGridViewTextBoxColumn.DataPropertyName = "ДатаНародження";
-            this.датаНародженняDataGridViewTextBoxColumn.HeaderText = "ДатаНародження";
+            this.датаНародженняDataGridViewTextBoxColumn.DataPropertyName = "Дата народження";
+            this.датаНародженняDataGridViewTextBoxColumn.HeaderText = "Дата народження";
             this.датаНародженняDataGridViewTextBoxColumn.Name = "датаНародженняDataGridViewTextBoxColumn";
+            // 
+            // прізвищеDataGridViewTextBoxColumn1
+            // 
+            this.прізвищеDataGridViewTextBoxColumn1.DataPropertyName = "Прізвище";
+            this.прізвищеDataGridViewTextBoxColumn1.HeaderText = "Прізвище";
+            this.прізвищеDataGridViewTextBoxColumn1.Name = "прізвищеDataGridViewTextBoxColumn1";
+            // 
+            // імяDataGridViewTextBoxColumn1
+            // 
+            this.імяDataGridViewTextBoxColumn1.DataPropertyName = "Ім\'я";
+            this.імяDataGridViewTextBoxColumn1.HeaderText = "Ім\'я";
+            this.імяDataGridViewTextBoxColumn1.Name = "імяDataGridViewTextBoxColumn1";
+            // 
+            // спеціалізаціяDataGridViewTextBoxColumn
+            // 
+            this.спеціалізаціяDataGridViewTextBoxColumn.DataPropertyName = "Спеціалізація";
+            this.спеціалізаціяDataGridViewTextBoxColumn.HeaderText = "Спеціалізація";
+            this.спеціалізаціяDataGridViewTextBoxColumn.Name = "спеціалізаціяDataGridViewTextBoxColumn";
+            // 
+            // факультетDataGridViewTextBoxColumn
+            // 
+            this.факультетDataGridViewTextBoxColumn.DataPropertyName = "Факультет";
+            this.факультетDataGridViewTextBoxColumn.HeaderText = "Факультет";
+            this.факультетDataGridViewTextBoxColumn.Name = "факультетDataGridViewTextBoxColumn";
+            // 
+            // групаDataGridViewTextBoxColumn
+            // 
+            this.групаDataGridViewTextBoxColumn.DataPropertyName = "Група";
+            this.групаDataGridViewTextBoxColumn.HeaderText = "Група";
+            this.групаDataGridViewTextBoxColumn.Name = "групаDataGridViewTextBoxColumn";
+            // 
+            // датаНародженняDataGridViewTextBoxColumn1
+            // 
+            this.датаНародженняDataGridViewTextBoxColumn1.DataPropertyName = "Дата народження";
+            this.датаНародженняDataGridViewTextBoxColumn1.HeaderText = "Дата народження";
+            this.датаНародженняDataGridViewTextBoxColumn1.Name = "датаНародженняDataGridViewTextBoxColumn1";
+            // 
+            // містоселоDataGridViewTextBoxColumn
+            // 
+            this.містоселоDataGridViewTextBoxColumn.DataPropertyName = "Місто/село";
+            this.містоселоDataGridViewTextBoxColumn.HeaderText = "Місто/село";
+            this.містоселоDataGridViewTextBoxColumn.Name = "містоселоDataGridViewTextBoxColumn";
+            // 
+            // місцеПропискиDataGridViewTextBoxColumn
+            // 
+            this.місцеПропискиDataGridViewTextBoxColumn.DataPropertyName = "Місце прописки";
+            this.місцеПропискиDataGridViewTextBoxColumn.HeaderText = "Місце прописки";
+            this.місцеПропискиDataGridViewTextBoxColumn.Name = "місцеПропискиDataGridViewTextBoxColumn";
+            // 
+            // прізвищеDataGridViewTextBoxColumn3
+            // 
+            this.прізвищеDataGridViewTextBoxColumn3.DataPropertyName = "Прізвище";
+            this.прізвищеDataGridViewTextBoxColumn3.HeaderText = "Прізвище";
+            this.прізвищеDataGridViewTextBoxColumn3.Name = "прізвищеDataGridViewTextBoxColumn3";
+            // 
+            // імяDataGridViewTextBoxColumn3
+            // 
+            this.імяDataGridViewTextBoxColumn3.DataPropertyName = "Ім\'я";
+            this.імяDataGridViewTextBoxColumn3.HeaderText = "Ім\'я";
+            this.імяDataGridViewTextBoxColumn3.Name = "імяDataGridViewTextBoxColumn3";
+            // 
+            // датаНародженняDataGridViewTextBoxColumn3
+            // 
+            this.датаНародженняDataGridViewTextBoxColumn3.DataPropertyName = "Дата народження";
+            this.датаНародженняDataGridViewTextBoxColumn3.HeaderText = "Дата народження";
+            this.датаНародженняDataGridViewTextBoxColumn3.Name = "датаНародженняDataGridViewTextBoxColumn3";
+            // 
+            // припискаДоВоєнкоматуDataGridViewTextBoxColumn
+            // 
+            this.припискаДоВоєнкоматуDataGridViewTextBoxColumn.DataPropertyName = "Приписка до воєнкомату";
+            this.припискаДоВоєнкоматуDataGridViewTextBoxColumn.HeaderText = "Приписка до воєнкомату";
+            this.припискаДоВоєнкоматуDataGridViewTextBoxColumn.Name = "припискаДоВоєнкоматуDataGridViewTextBoxColumn";
             // 
             // TablesForm
             // 
@@ -441,11 +473,7 @@
             this.Name = "TablesForm";
             this.Text = "Таблиці";
             this.Load += new System.EventHandler(this.PersonnelResultForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.personnelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSet)).EndInit();
             this.searchPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conscriptsBindingSource)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.workersDataGridView)).EndInit();
@@ -454,7 +482,13 @@
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.conscriptsDataGridView)).EndInit();
             this.dataPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dbDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personnelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conscriptsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,13 +497,6 @@
         #endregion
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Panel searchPanel;
-        private DBDataSet dbDataSet;
-        private System.Windows.Forms.BindingSource personnelBindingSource;
-        private DBDataSetTableAdapters.PersonnelTableAdapter personnelTableAdapter;
-        protected System.Windows.Forms.BindingSource studentsBindingSource;
-        protected DBDataSetTableAdapters.StudentsTableAdapter studentsTableAdapter;
-        protected System.Windows.Forms.BindingSource conscriptsBindingSource;
-        protected DBDataSetTableAdapters.ConscriptsTableAdapter conscriptsTableAdapter;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage1;
         protected System.Windows.Forms.DataGridView workersDataGridView;
@@ -484,10 +511,23 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn імяDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn прізвищеDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn прізвищеDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn імяDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn датаНародженняDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn припискаDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private DBDataSet dBDataSet;
+        private System.Windows.Forms.BindingSource personnelBindingSource;
+        private DBDataSetTableAdapters.PersonnelTableAdapter personnelTableAdapter;
+        private System.Windows.Forms.BindingSource studentsBindingSource;
+        private DBDataSetTableAdapters.StudentsTableAdapter studentsTableAdapter;
+        private System.Windows.Forms.BindingSource conscriptsBindingSource;
+        private DBDataSetTableAdapters.ConscriptsTableAdapter conscriptsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn прізвищеDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn імяDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn категоріяDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn колишняРоботаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn кваліфікаціяDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn посадаDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn датаНародженняDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn прізвищеDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn імяDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn спеціалізаціяDataGridViewTextBoxColumn;
@@ -496,13 +536,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn датаНародженняDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn містоселоDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn місцеПропискиDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource dbDataSetBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn прізвищеDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn імяDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn категоріяDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn колишняРоботаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn кваліфікаціяDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn посадаDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn датаНародженняDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn прізвищеDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn імяDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn датаНародженняDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn припискаДоВоєнкоматуDataGridViewTextBoxColumn;
     }
 }

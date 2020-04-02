@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practice.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,12 @@ namespace Practice
         private void PersonnelForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void tableLabel_Click_1(object sender, EventArgs e)
+        {
+            KeyForm keyForm = new KeyForm();
+            keyForm.Show();
         }
     }
 
