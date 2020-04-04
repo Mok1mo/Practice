@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Practice.Forms.KeyForm">
+    <Position X="1" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAEAKCAAAACAIAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\KeyForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practice.PersonnelForm">
+    <Position X="5" Y="0.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgAEAACAAQAAAAACggAgCAQAAAAAAAAAAAAAAARA=</HashCode>
+      <FileName>Forms\PersonnelForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TablesForm" />
+      <Property Name="KeyForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Practice.TablesForm">
+    <Position X="8.75" Y="0.5" Width="4.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>TICIAAZIAeAQQIsAAiiACAQCFWIoCAAAAQEkeBIDAGA=</HashCode>
+      <FileName>Result\TablesForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

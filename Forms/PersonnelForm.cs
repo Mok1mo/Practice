@@ -19,7 +19,23 @@ namespace Practice
             InitializeComponent();
         }
 
-        private void tablesLabel_Click(object sender, EventArgs e)
+        public TablesForm TablesForm
+        {
+            get => default(TablesForm);
+            set
+            {
+            }
+        }
+
+        public KeyForm KeyForm
+        {
+            get => default(KeyForm);
+            set
+            {
+            }
+        }
+
+        private void tableLabel_Click(object sender, EventArgs e)
         {
             TablesForm tablesForm = new TablesForm();
             tablesForm.Show();
@@ -35,7 +51,7 @@ namespace Practice
             Application.Exit();
         }
 
-        private void tableLabel_Click_1(object sender, EventArgs e)
+        private void tablesLabel_Click(object sender, EventArgs e)
         {
             KeyForm keyForm = new KeyForm();
             keyForm.Show();

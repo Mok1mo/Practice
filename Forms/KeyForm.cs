@@ -57,5 +57,10 @@ namespace Practice.Forms
             //Закрываем подключение к БД
             myConnection.Close();
         }
+
+        private void enterLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

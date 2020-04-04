@@ -92,6 +92,7 @@
     <EmbeddedResource Include="Result\TablesForm.resx">
       <DependentUpon>TablesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="DBDataSet.xsc">
       <DependentUpon>DBDataSet.xsd</DependentUpon>
     </None>
