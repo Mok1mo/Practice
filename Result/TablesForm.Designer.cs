@@ -90,10 +90,9 @@
             // 
             this.searchTextBox.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.searchTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.searchTextBox.Location = new System.Drawing.Point(16, 15);
-            this.searchTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchTextBox.Location = new System.Drawing.Point(12, 12);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(332, 34);
+            this.searchTextBox.Size = new System.Drawing.Size(250, 29);
             this.searchTextBox.TabIndex = 2;
             this.searchTextBox.Text = "Введіть прізвище";
             this.searchTextBox.Enter += new System.EventHandler(this.searchTextBox_Enter);
@@ -105,9 +104,8 @@
             this.searchPanel.Controls.Add(this.saveButton);
             this.searchPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.searchPanel.Location = new System.Drawing.Point(0, 0);
-            this.searchPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchPanel.Name = "searchPanel";
-            this.searchPanel.Size = new System.Drawing.Size(1179, 71);
+            this.searchPanel.Size = new System.Drawing.Size(884, 58);
             this.searchPanel.TabIndex = 4;
             // 
             // saveButton
@@ -118,10 +116,9 @@
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(981, 13);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveButton.Location = new System.Drawing.Point(736, 11);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(162, 47);
+            this.saveButton.Size = new System.Drawing.Size(122, 38);
             this.saveButton.TabIndex = 11;
             this.saveButton.Text = "Зберегти";
             this.saveButton.UseVisualStyleBackColor = false;
@@ -135,21 +132,19 @@
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Cambria", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tabControl.Location = new System.Drawing.Point(0, 0);
-            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1179, 372);
+            this.tabControl.Size = new System.Drawing.Size(884, 302);
             this.tabControl.TabIndex = 1;
             this.tabControl.TabIndexChanged += new System.EventHandler(this.tabControl_TabIndexChanged);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.workersDataGridView);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1171, 341);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(876, 277);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Працівники";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -169,12 +164,12 @@
             this.датаНародженняDataGridViewTextBoxColumn1});
             this.workersDataGridView.DataSource = this.personnelBindingSource;
             this.workersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.workersDataGridView.Location = new System.Drawing.Point(4, 4);
-            this.workersDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.workersDataGridView.Location = new System.Drawing.Point(3, 3);
             this.workersDataGridView.Name = "workersDataGridView";
             this.workersDataGridView.RowHeadersWidth = 51;
-            this.workersDataGridView.Size = new System.Drawing.Size(1163, 333);
+            this.workersDataGridView.Size = new System.Drawing.Size(870, 271);
             this.workersDataGridView.TabIndex = 0;
+            this.workersDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.workersDataGridView_UserDeletingRow);
             // 
             // прізвищеDataGridViewTextBoxColumn1
             // 
@@ -238,11 +233,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.studentsDataGridView);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1171, 344);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(876, 277);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Студенти";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -264,12 +258,12 @@
             this.місцеПропискиDataGridViewTextBoxColumn});
             this.studentsDataGridView.DataSource = this.studentsBindingSource;
             this.studentsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.studentsDataGridView.Location = new System.Drawing.Point(4, 4);
-            this.studentsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.studentsDataGridView.Location = new System.Drawing.Point(3, 3);
             this.studentsDataGridView.Name = "studentsDataGridView";
             this.studentsDataGridView.RowHeadersWidth = 51;
-            this.studentsDataGridView.Size = new System.Drawing.Size(1163, 336);
+            this.studentsDataGridView.Size = new System.Drawing.Size(870, 271);
             this.studentsDataGridView.TabIndex = 0;
+            this.studentsDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.studentsDataGridView_UserDeletingRow);
             // 
             // прізвищеDataGridViewTextBoxColumn3
             // 
@@ -335,11 +329,10 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.conscriptsDataGridView);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(1171, 343);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(876, 277);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Військовозобов\'язані";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -356,12 +349,12 @@
             this.припискаDataGridViewTextBoxColumn1});
             this.conscriptsDataGridView.DataSource = this.conscriptsBindingSource;
             this.conscriptsDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.conscriptsDataGridView.Location = new System.Drawing.Point(4, 4);
-            this.conscriptsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.conscriptsDataGridView.Location = new System.Drawing.Point(3, 3);
             this.conscriptsDataGridView.Name = "conscriptsDataGridView";
             this.conscriptsDataGridView.RowHeadersWidth = 51;
-            this.conscriptsDataGridView.Size = new System.Drawing.Size(1163, 335);
+            this.conscriptsDataGridView.Size = new System.Drawing.Size(870, 271);
             this.conscriptsDataGridView.TabIndex = 0;
+            this.conscriptsDataGridView.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.conscriptsDataGridView_UserDeletingRow);
             // 
             // прізвищеDataGridViewTextBoxColumn
             // 
@@ -400,10 +393,9 @@
             // 
             this.dataPanel.Controls.Add(this.tabControl);
             this.dataPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataPanel.Location = new System.Drawing.Point(0, 72);
-            this.dataPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataPanel.Location = new System.Drawing.Point(0, 59);
             this.dataPanel.Name = "dataPanel";
-            this.dataPanel.Size = new System.Drawing.Size(1179, 372);
+            this.dataPanel.Size = new System.Drawing.Size(884, 302);
             this.dataPanel.TabIndex = 3;
             // 
             // припискаDataGridViewTextBoxColumn
@@ -460,15 +452,14 @@
             // 
             // TablesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1179, 444);
+            this.ClientSize = new System.Drawing.Size(884, 361);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.dataPanel);
             this.Controls.Add(this.searchPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TablesForm";
             this.Load += new System.EventHandler(this.PersonnelResultForm_Load);
             this.searchPanel.ResumeLayout(false);

@@ -119,7 +119,7 @@ namespace Practice
                 }
             }
         }
-        //DElETE
+
         private void workersDataGridView_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
         {
             DialogResult dr = MessageBox.Show("Удалить запись?", "Удаление", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
@@ -159,11 +159,6 @@ namespace Practice
             {
                 this.Width = conscriptsDataGridView.Width;
             }
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
